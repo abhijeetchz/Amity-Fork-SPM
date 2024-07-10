@@ -37,7 +37,8 @@ let package = Package(
         ),
         .target(
             name: "ZumbaAmityKit",
-            dependencies: ["AmityUIKit","AmitySDK", "Realm", "RealmSwift"]
+            dependencies: ["AmityUIKit","AmitySDK", "Realm", "RealmSwift"],
+            resources: [.process("Modules")]
         ),
         .testTarget(
             name: "ZumbaAmityKitTests",
