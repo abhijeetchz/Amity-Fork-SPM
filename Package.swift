@@ -8,7 +8,9 @@ let package = Package(
     products: [
         .library(
             name: "ZumbaAmityKit",
-            targets: ["ZumbaAmityKit"]
+            targets: [
+                "ZumbaAmityKit"
+            ]
         ),
     ],
     targets: [
@@ -18,7 +20,8 @@ let package = Package(
             checksum: "64fa391f50185357e99f2a7808e293638a34f4d729defc7eba669b66c0da8fcd"
         ),
         .target(
-            name: "ZumbaAmityKit"
+            name: "ZumbaAmityKit",
+            dependencies: ["AmitySDK"]
         ),
         .testTarget(
             name: "ZumbaAmityKitTests",
